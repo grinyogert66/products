@@ -26,7 +26,7 @@ podTemplate(label: '12-mall',
         stage('Build'){
             container('docker'){
                 script {
-                    appImage = docker.build("grinyogert66/"products")
+                    appImage = docker.build("grinyogert66/products")
                 }
             }
         }
